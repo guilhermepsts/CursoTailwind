@@ -9,14 +9,19 @@
 </head>
 
 <body class="m-8 font-medium">
-  <nav class="flex justify-between ">
-    <a href="/">Floresta</a>
-    <ul class="flex gap-4">
+  <nav>
+    <button id="menuButton" class="px-4 py-2 bg-purple-500 text-white rounded-md shadow-md mb-5">Menu</button>
+    <ul id="menu" class=" px-4 py-2 bg-purple-500 text-white rounded-md shadow-md mb-5 max-w-28 hidden" >
       <li>Produtos</li>
       <li>Sobre</li>
       <li>Contato</li>
     </ul>
-
-    
   </nav>
+</body>
+
+<script>
+  menuButton?.addEventListener('click', () => {
+    menu?.classList.toggle('hidden');
+  });
+</script>
 </html>
